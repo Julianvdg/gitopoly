@@ -13,3 +13,123 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+
+body {
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+body h1,
+body h2 {
+    color: #fff;
+    text-align: center;
+}
+
+/* Logo styling */
+
+#logo {
+    text-align: center;
+    margin-top: 30px;
+}
+#logo img{
+    width:25%;
+    max-width: 500px;
+}
+
+/* Game board styling */
+
+#board {
+    position: relative;
+    margin: 30px auto;
+    background-color: #383838;
+    border: 10px solid #383838;
+    min-width: 500px;
+    max-width: 600px;
+    
+}
+#board div {
+    background: #fff;
+    width: 25%;
+    padding: 10px 0;
+    height: 100px;
+    display: inline-block;
+    margin-left: -8px;
+    text-align: center;
+    cursor: pointer;
+    border: solid 2px #000;
+}
+
+/* Streets styling */
+
+#board div span {
+    font-size: 12px;
+    display: block;
+    position: relative;
+    top: 30px;
+}
+
+/* Streets content */
+
+
+#board div span.place {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+#board div span.player {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+#board div span.price {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#board div span.money {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+#board div:hover {
+    background: #d9d9d9;
+}
+
+/* PLayer styling */
+#board div.player-overview {
+    background-color: #eee;
+}
+
+#board div.player1 {
+    background-color: #e74c3c;
+}
+
+#board div.player2 {
+    background-color: #3498db ;
+}
+
+#board div.player3 {
+    background-color: #2ecc71;
+}
+
+#board div.player4 {
+    background-color: #f1c40f;
+}
+
