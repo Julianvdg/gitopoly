@@ -4,12 +4,13 @@ class GamesController < ApplicationController
   # GET /games
   # GET /games.json
   def index
-    @games = Game.all
+    @games = Game.first
   end
 
   # GET /games/1
   # GET /games/1.json
   def show
+      @games = Game.first
   end
 
   # GET /games/new

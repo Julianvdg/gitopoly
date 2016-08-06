@@ -1,79 +1,80 @@
 
 
-
+   
+   
     <div id='board'>
         <!-- Top Row -->
         <div>
-            <span class='place'>Straat</span>
-            <span class='price'>€ 800</span>
-        </div>
-        <div>
-            <span class='place'>Straat</span>
-            <span class='price'>€ 400</span>
-        </div>
-        <div>
-            <span class='place'>Straat</span>
-            <span class='price'>€ 400</span>
-        </div>
-        <div>
-            <span class='place'>Straat</span>
-            <span class='price'>€ 400</span>
-        </div>
+            <span class='place'><%= @games.squares[0].name %></span>
+           <span class='price'>&nbsp;</span>
+       </div>
+       <div>
+           <span class='place'><%= @games.squares[1].name %></span>
+           <span class='price'><%= @games.squares[1].dev_time %></span>
+       </div>
+       <div>
+           <span class='place'><%= @games.squares[2].name %></span>
+           <span class='price'>€ 400</span>
+       </div>
+       <div>
+           <span class='place'><%= @games.squares[3].name %></span>
+           <span class='price'>€ 400</span>
+       </div>
 
 
-        <!-- 1st middle Row -->
-        <div>
-            <span class='place'>Straat</span>
-            <span class='price'>€ 800</span>
-        </div>
-        <div class='player-overview player1'>
-            <span class='player'>Player 1</span>
-            <span class='money'>Money: € 500</span>
-        </div>
-        <div class='player-overview player2'>
-            <span class='player'>Player 2</span>
-            <span class='money'>Money: € 500</span>
-        </div>
-        <div>
-            <span class='place'>Straat</span>
-            <span class='price'>€ 400</span>
-        </div>
+       <!-- 1st middle Row -->
+       <div>
+           <span class='place'><%= @games.squares[11].name %></span>
+           <span class='price'>€ 800</span>
+       </div>
+       <div class='player-overview player1'>
+           <span class='player'>Player 1</span>
+           <span class='money'>Money: € 500</span>
+       </div>
+       <div class='player-overview player2'>
+           <span class='player'>Player 2</span>
+           <span class='money'>Money: € 500</span>
+       </div>
+       <div>
+           <span class='place'><%= @games.squares[4].name %></span>
+           <span class='price'>€ 400</span>
+       </div>
 
-        <!-- 2nd middle Row -->
-        <div>
-            <span class='place'>Straat</span>
-            <span class='price'>€ 800</span>
-        </div>
-        <div class='player-overview player3'>
-            <span class='player'>Player 3</span>
-            <span class='money'>Money: € 500</span>
-        </div>
-        <div class='player-overview player4'>
-            <span class='player'>Player 4</span>
-            <span class='money'>Money: € 500</span>
-        </div>
-        <div>
-            <span class='place'>Straat</span>
-            <span class='price'>€ 400</span>
-        </div>
+       <!-- 2nd middle Row -->
+       <div>
+           <span class='place'><%= @games.squares[10].name %></span>
+           <span class='price'>€ 800</span>
+       </div>
+       <div class='player-overview player3'>
+           <span class='player'>Player 3</span>
+           <span class='money'>Money: € 500</span>
+       </div>
+       <div class='player-overview player4'>
+           <span class='player'>Player 4</span>
+           <span class='money'>Money: € 500</span>
+       </div>
+       <div>
+           <span class='place'><%= @games.squares[5].name %></span>
+           <span class='price'>€ 400</span>
+       </div>
 
-        <!-- Bottom Row -->
-        <div>
-            <span class='place'>Straat</span>
-            <span class='price'>€ 800</span>
-        </div>
-        <div>
-            <span class='place'>Straat</span>
-            <span class='price'>€ 400</span>
-        </div>
-        <div>
-            <span class='place'>Straat</span>
-            <span class='price'>€ 400</span>
-        </div>
-        <div>
-            <span class='place'>Straat</span>
-            <span class='price'>€ 400</span>
-        </div>
+       <!-- Bottom Row -->
+       <div>
+           <span class='place'><%= @games.squares[9].name %></span>
+           <span class='price'>€ 800</span>
+       </div>
+       <div>
+           <span class='place'><%= @games.squares[8].name %></span>
+           <span class='price'>€ 400</span>
+       </div>
+       <div>
+           <span class='place'><%= @games.squares[7].name %></span>
+           <span class='price'>€ 400</span>
+       </div>
+       <div>
+           <span class='place'><%= @games.squares[5].name %></span>
+           <span class='price'>€ 400</span>
+       </div>
 
 
 
