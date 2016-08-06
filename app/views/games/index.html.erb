@@ -1,31 +1,100 @@
-<p id="notice"><%= notice %></p>
+<!doctype html>
+<html>
 
-<h1>Games</h1>
+<head>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Gitopoly</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
 
-<table>
-  <thead>
-    <tr>
-      <th>Turn</th>
-      <th>Winner</th>
-      <th>Status</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<body>
 
-  <tbody>
-    <% @games.each do |game| %>
-      <tr>
-        <td><%= game.turn %></td>
-        <td><%= game.winner %></td>
-        <td><%= game.status %></td>
-        <td><%= link_to 'Show', game %></td>
-        <td><%= link_to 'Edit', edit_game_path(game) %></td>
-        <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <div id='logo'>
+        <%= image_tag "gitopoly.png" %>
+    </div>
 
-<br>
+    <div id='board'>
+        <!-- Top Row -->
+        <div>
+            <span class='place'>Straat</span>
+            <span class='price'>€ 800</span>
+        </div>
+        <div>
+            <span class='place'>Straat</span>
+            <span class='price'>€ 400</span>
+        </div>
+        <div>
+            <span class='place'>Straat</span>
+            <span class='price'>€ 400</span>
+        </div>
+        <div>
+            <span class='place'>Straat</span>
+            <span class='price'>€ 400</span>
+        </div>
 
-<%= link_to 'New Game', new_game_path %>
+
+        <!-- 1st middle Row -->
+        <div>
+            <span class='place'>Straat</span>
+            <span class='price'>€ 800</span>
+        </div>
+        <div class='player-overview player1'>
+            <span class='player'>Player 1</span>
+            <span class='money'>Money: € 500</span>
+        </div>
+        <div class='player-overview player2'>
+            <span class='player'>Player 2</span>
+            <span class='money'>Money: € 500</span>
+        </div>
+        <div>
+            <span class='place'>Straat</span>
+            <span class='price'>€ 400</span>
+        </div>
+
+        <!-- 2nd middle Row -->
+        <div>
+            <span class='place'>Straat</span>
+            <span class='price'>€ 800</span>
+        </div>
+        <div class='player-overview player3'>
+            <span class='player'>Player 3</span>
+            <span class='money'>Money: € 500</span>
+        </div>
+        <div class='player-overview player4'>
+            <span class='player'>Player 4</span>
+            <span class='money'>Money: € 500</span>
+        </div>
+        <div>
+            <span class='place'>Straat</span>
+            <span class='price'>€ 400</span>
+        </div>
+
+        <!-- Bottom Row -->
+        <div>
+            <span class='place'>Straat</span>
+            <span class='price'>€ 800</span>
+        </div>
+        <div>
+            <span class='place'>Straat</span>
+            <span class='price'>€ 400</span>
+        </div>
+        <div>
+            <span class='place'>Straat</span>
+            <span class='price'>€ 400</span>
+        </div>
+        <div>
+            <span class='place'>Straat</span>
+            <span class='price'>€ 400</span>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
