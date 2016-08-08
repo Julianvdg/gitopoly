@@ -7,6 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Game.create( {turn: 1, winner: "jimmy", status: "running"})
 
+Player.create( {name: "Timmo", time: 2000, color: 123456, visiting_position:0, game_id: 1 } )
+Player.create( {name: "Christiaan", time: 2000, color: 45678, visiting_position:0, game_id: 1 } )
+Player.create( {name: "Julian", time: 2000, color: 623467, visiting_position:0, game_id: 1 } )
+Player.create( {name: "Rein", time: 2000, color: 910324, visiting_position:0, game_id: 1 } )
+
 Square.create( {name: "Start",dev_time: 0, maintain_time: 0, game_id: 1 })
 Square.create( {name: "PHP", dev_time: 400, maintain_time: 400, game_id: 1 })
 Square.create( {name: "sql", dev_time: 450, maintain_time: 450, game_id: 1 })
